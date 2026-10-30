@@ -15,3 +15,14 @@ class AnimalSpecies:
                 self.scientific_name == other.scientific_name and
                 self.population == other.population
         )
+
+class Song:
+    def __init__(self, name: str, artists: list[str], duration: int) -> None:
+        self.name = name
+        self.artists = artists
+        self.duration = duration
+
+    def __repr__(self) -> str:
+        return f'"{self.name}" by {self.artists} ({self.duration} sec)'
+
+s = Song("Let It Be", ["The Beatles"], 60)
